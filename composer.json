@@ -1,0 +1,18 @@
+{
+    "name": "artox-lab/entities",
+    "description": "Abstracts for Entities layer in Clean Architecture",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Artur Turchin",
+            "email": "a.turchin@artox.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ArtoxLab\\Entities\\": "src/"
+        }
+    }
+}
