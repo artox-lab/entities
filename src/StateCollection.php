@@ -9,9 +9,7 @@ declare(strict_types=1);
 
 namespace ArtoxLab\Entities;
 
-use ArrayAccess;
-
-class StateCollection implements ArrayAccess
+class StateCollection
 {
     /**
      * Array of entities
@@ -83,6 +81,16 @@ class StateCollection implements ArrayAccess
     public function isFlushed() : bool
     {
         return $this->isFlushed;
+    }
+
+    /**
+     * Return array of entities
+     *
+     * @return Entity[]
+     */
+    public function get(): array
+    {
+        return $this->elements;
     }
 
     /**
