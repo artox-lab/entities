@@ -22,7 +22,7 @@ abstract class AbstractEntity implements Entity
      *
      * @return void
      */
-    public function setReferenceState(string $name, State $state)
+    public function setReferenceState(string $name, State $state): void
     {
         if (property_exists($this, $name) === false) {
             throw new \RuntimeException(sprintf('Invalid name of reference %s', $name));
@@ -38,7 +38,7 @@ abstract class AbstractEntity implements Entity
      *
      * @return mixed
      */
-    public function getReferenceState(string $name)
+    public function getReferenceState(string $name): void
     {
         if (property_exists($this, $name) === false) {
             throw new \RuntimeException(sprintf('Invalid name of reference %s', $name));
