@@ -11,7 +11,7 @@ namespace ArtoxLab\Entities;
 
 use ArrayAccess;
 
-class RelatedCollection implements ArrayAccess
+class StateCollection implements ArrayAccess
 {
     /**
      * Array of entities
@@ -49,7 +49,7 @@ class RelatedCollection implements ArrayAccess
     protected $deleted;
 
     /**
-     * RelatedCollection constructor.
+     * StateCollection constructor.
      *
      * @param Entity[] $elements Array of entities
      */
