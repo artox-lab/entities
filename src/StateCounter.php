@@ -21,7 +21,7 @@ class StateCounter
     /**
      * StateCounter constructor.
      *
-     * @param int $count
+     * @param int $count Counter
      */
     public function __construct(int $count = 0)
     {
@@ -31,7 +31,9 @@ class StateCounter
     /**
      * Increase counter
      *
-     * @param int $n
+     * @param int $n Increment
+     *
+     * @return void
      */
     public function incr(int $n = 1): void
     {
@@ -41,7 +43,9 @@ class StateCounter
     /**
      * Decrease counter
      *
-     * @param int $n
+     * @param int $n Decrement
+     *
+     * @return void
      */
     public function decr(int $n = 1): void
     {
