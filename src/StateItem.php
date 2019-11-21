@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace ArtoxLab\Entities;
 
-class RelatedItem
+class StateItem
 {
     /**
      * Related entity
