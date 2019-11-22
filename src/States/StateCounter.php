@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace ArtoxLab\Entities;
+namespace ArtoxLab\Entities\States;
 
 class StateCounter
 {
