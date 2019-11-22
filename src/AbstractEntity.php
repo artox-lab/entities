@@ -36,9 +36,9 @@ abstract class AbstractEntity implements Entity
      *
      * @param string $name Name of reference
      *
-     * @return mixed
+     * @return State
      */
-    public function getReferenceState(string $name): void
+    public function getReferenceState(string $name): State
     {
         if (property_exists($this, $name) === false) {
             throw new \RuntimeException(sprintf('Invalid name of reference %s', $name));
