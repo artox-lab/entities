@@ -7,9 +7,11 @@
 
 declare(strict_types=1);
 
-namespace ArtoxLab\Entities;
+namespace ArtoxLab\Entities\States;
 
-class StateCollection
+use ArtoxLab\Entities\Entity;
+
+class StateCollection implements State
 {
     /**
      * Array of entities

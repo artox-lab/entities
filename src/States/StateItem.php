@@ -7,9 +7,11 @@
 
 declare(strict_types=1);
 
-namespace ArtoxLab\Entities;
+namespace ArtoxLab\Entities\States;
 
-class StateItem
+use ArtoxLab\Entities\Entity;
+
+class StateItem implements State
 {
     /**
      * Related entity
